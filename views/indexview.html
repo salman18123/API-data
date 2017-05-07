@@ -1,0 +1,11 @@
+<p class="text-center"><input type="text" placeholder="search" ng-model="data"></p></br></br>
+       <div ng-repeat="names in got.all | orderBy:'name'|filter:data">
+       <div class="well well-sm"  ng-show="names.status==='book'"><div>
+       <got-book></got-book></div></div>
+       <div class="well well-sm"  ng-show="names.status==='house'"><div>
+       <got-house></got-house></div></div>
+       <div class="well well-sm"  ng-show="names.status==='character'"><div>
+       <got-character></got-character></div></div>
+
+
+       </div>
